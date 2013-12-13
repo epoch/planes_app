@@ -1,0 +1,16 @@
+<%= form_tag '/flights', :method => :get do %>
+  <%= label_tag 'flight number' %>
+  <%= text_field_tag 'search[number]', params[:search][:number] %><br/>
+
+  <%= label_tag 'plane model' %>
+  <%= text_field_tag 'search[model]', params[:search][:model] %><br/>
+  <%= submit_tag 'filter' %>
+
+<% end %>
+
+
+<% @flights.each do |flight| %>
+
+  <p><%= link_to flight.number, flight %></p>
+
+<% end %>

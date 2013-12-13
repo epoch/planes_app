@@ -1,0 +1,13 @@
+.seat {
+  border: 2px solid black;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #bada55;
+  margin: 0 4px;
+}
+
+.taken {
+  background-color: gray;
+}
